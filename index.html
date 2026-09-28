@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Crown👑 | Catálogo Air Jordan 1 Low</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Fundo Cinzento com Padrão de Graffiti em Marca d'Água */
+    body {
+      background-color: #1a1a1e;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200' viewBox='0 0 400 200'%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='rgba(255,255,255,0.03)' font-family='Impact, Trebuchet MS, sans-serif' font-size='38' font-weight='900' transform='rotate(-15 200 100)' letter-spacing='3'%3ETHE CROWN 👑%3C/text%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-attachment: fixed;
+      color: #f0f0f0;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 35px;
+      padding: 25px 10px;
+      background: rgba(255, 255, 255, 0.05);
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .brand-title {
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 5px;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+
+    .brand-subtitle {
+      font-size: 1rem;
+      color: #b0b0ba;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .product-card {
+      background: #24242a;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .slider-container {
+      position: relative;
+      width: 100%;
+      padding-top: 100%; /* Proporção 1:1 */
+      overflow: hidden;
+      background-color: #18181c;
+    }
+
+    .image-slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .image-slider::-webkit-scrollbar {
+      display: none;
+    }
+
+    .image-slider img {
+      min-width: 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      scroll-snap-align: start;
+    }
+
+    .slide-badge {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 12px;
+      pointer-events: none;
+      -webkit-backdrop-filter: blur(4px);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .product-info {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+
+    .product-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #ffffff;
+    }
+
+    .product-category {
+      font-size: 0.85rem;
+      color: #9a9ab0;
+      margin-bottom: 18px;
+    }
+
+    .btn-buy {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 12px;
+      background-color: #25D366;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+    }
+
+    .btn-buy:hover {
+      background-color: #1eb954;
+      transform: scale(1.01);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="brand-title">The Crown👑</h1>
+    <p class="brand-subtitle">Coleção Exclusiva Air Jordan 1 Low</p>
+  </header>
+
+  <div class="grid-container" id="grid-produtos"></div>
+
+  <script>
+    var numeroWhatsapp = "258870498512";
+
+    var produtos = [
+      {
+        nome: 'Air Jordan 1 Low "Dark Beetroot"',
+        categoria: 'Edição Especial',
+        imagens: ['imagens/beet1.jpg', 'imagens/beet2.jpg', 'imagens/beet3.jpg', 'imagens/beet4.jpg', 'imagens/beet5.jpg', 'imagens/beet6.jpg', 'imagens/beet7.jpg', 'imagens/beet8.jpg']
+      },
+      {
+        nome: 'Air Jordan 1 Low "Triple Black"',
+        categoria: 'Coleção Clássica',
+        imagens: ['imagens/black1.jpg', 'imagens/black2.jpg', 'imagens/black3.jpg', 'imagens/black4.jpg', 'imagens/black5.jpg', 'imagens/black6.jpg', 'imagens/black7.jpg']
+      },
+      {
+        nome: 'Air Jordan 1 Low "Reverse Bred"',
+        categoria: 'Gym Red / Black',
+        imagens: ['imagens/blood1.jpg', 'imagens/blood2.jpg', 'imagens/blood3.jpg', 'imagens/blood4.jpg', 'imagens/blood5.jpg', 'imagens/blood6.jpg', 'imagens/blood7.jpg']
+      },
+      {
+        nome: 'Air Jordan 1 Low "Royal Toe"',
+        categoria: 'Coleção Clássica',
+        imagens: ['imagens/blue1.jpg', 'imagens/blue2.jpg', 'imagens/blue3.jpg', 'imagens/blue4.jpg', 'imagens/blue5.jpg']
+      },
+      {
+        nome: 'Air Jordan 1 Low "Mocha / Palomino"',
+        categoria: 'Edição Especial',
+        imagens: ['imagens/brown1.jpg', 'imagens/brown2.jpg', 'imagens/brown3.jpg', 'imagens/brown4.jpg', 'imagens/brown5.jpg']
+      },
+      {
+        nome: 'Air Jordan 1 Low "Court Purple"',
+        categoria: 'Texturizado SE',
+        imagens: ['imagens/court1.jpg', 'imagens/court2.jpg', 'imagens/court3.jpg', 'imagens/court4.jpg', 'imagens/court5.jpg', 'imagens/court6.jpg', 'imagens/court7.jpg', 'imagens/court8.jpg', 'imagens/court9.jpg', 'imagens/court10.jpg']
+      },
+      {
+        nome: 'Air Jordan 1 Low "Pine Green"',
+        categoria: 'Coleção Clássica',
+        imagens: ['imagens/green1.jpg', 'imagens/green2.jpg', 'imagens/green3.jpg', 'imagens/green4.jpg', 'imagens/green5.jpg']
+      },
+      {
+        nome: 'Air Jordan 1 Low "Black Elephant"',
+        categoria: 'Elephant Print SE',
+        imagens: ['imagens/grey1.jpg', 'imagens/grey2.jpg', 'imagens/grey3.jpg', 'imagens/grey4.jpg', 'imagens/grey5.jpg', 'imagens/grey6.jpg']
+      },
+      {
+        nome: 'Air Jordan 1 Low "Sky J Purple"',
+        categoria: 'Action Grape',
+        imagens: ['imagens/purple1.jpg', 'imagens/purple2.jpg', 'imagens/purple3.jpg', 'imagens/purple4.jpg', 'imagens/purple5.jpg', 'imagens/purple6.jpg']
+      },
+      {
+        nome: 'Air Jordan 1 Low "Gym Red / Gold"',
+        categoria: 'Edição Especial',
+        imagens: ['imagens/red1.jpg', 'imagens/red2.jpg', 'imagens/red3.jpg']
+      },
+      {
+        nome: 'Air Jordan 1 Low "Tropical Teal"',
+        categoria: 'Turquoise Sand',
+        imagens: ['imagens/turk1.jpg', 'imagens/turk2.jpg', 'imagens/turk3.jpg', 'imagens/turk4.jpg', 'imagens/turk5.jpg', 'imagens/turk6.jpg']
+      }
+    ];
+
+    var container = document.getElementById('grid-produtos');
+
+    for (var i = 0; i < produtos.length; i++) {
+      var item = produtos[i];
+      var card = document.createElement('div');
+      card.className = 'product-card';
+
+      var imgsHTML = '';
+      for (var j = 0; j < item.imagens.length; j++) {
+        imgsHTML += '<img src="' + item.imagens[j] + '" alt="' + item.nome + '" loading="lazy">';
+      }
+
+      var msg = encodeURIComponent('Olá, The Crown👑! Gostaria de obter mais informações sobre o sapatilha: ' + item.nome);
+      var link = 'https://wa.me/' + numeroWhatsapp + '?text=' + msg;
+
+      card.innerHTML = 
+        '<div class="slider-container">' +
+          '<div class="image-slider">' + imgsHTML + '</div>' +
+          '<span class="slide-badge">Deslize ➔</span>' +
+        '</div>' +
+        '<div class="product-info">' +
+          '<div>' +
+            '<h2 class="product-title">' + item.nome + '</h2>' +
+            '<p class="product-category">' + item.categoria + '</p>' +
+          '</div>' +
+          '<a href="' + link + '" target="_blank" class="btn-buy">Encomendar via WhatsApp</a>' +
+        '</div>';
+
+      container.appendChild(card);
+    }
+  </script>
+
+</body>
+</html>
